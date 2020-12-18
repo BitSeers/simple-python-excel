@@ -2,7 +2,7 @@ from openpyxl import load_workbook
 from openpyxl.comments import Comment
 
 # open excel file
-wb = load_workbook(filename='ExcelData01.xlsx')
+wb = load_workbook(filename='ExcelData01_Test.xlsx')
 
 # get a worksheet
 ws = wb['Sheet1']
@@ -16,7 +16,7 @@ column_letter_to_read = 'A'  # column A contains the comment to be copied to ano
 column_letter_to_write = 'B'  # column B will get the comment in column A as a value and also a comment
 comment_author = 'Brian'
 comment_count = 0
-for i in range(start_row, start_row + num_rows + 1):  # the '+ 1' is because Python range function end is exclusive
+for i in range(start_row, start_row + num_rows + 1):  # the '+ 1' is needed because Python range() "stop" parameter is exclusive
     read_cell_id = column_letter_to_read + str(i)
     # print(ws[ref].value)
     comment = ws[read_cell_id].comment
