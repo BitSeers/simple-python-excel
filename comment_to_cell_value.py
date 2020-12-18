@@ -2,8 +2,8 @@
 from openpyxl import load_workbook
 
 # input and output files
-OUTPUT_FILENAME = 'ExcelData01_Output.xlsx'
-INPUT_FILENAME = 'ExcelData01_Test.xlsx'
+OUTPUT_FILENAME = 'Petroleum_Upstream_v721_vs_Petroleum_Upstream_v610_OUTPUT.xlsx'
+INPUT_FILENAME = 'Petroleum_Upstream_v721_vs_Petroleum_Upstream_v610_PRECOMMENT.xlsx'
 
 # open excel file
 wb = load_workbook(filename=INPUT_FILENAME)
